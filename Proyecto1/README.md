@@ -3,7 +3,7 @@
 
 # Como ingresar (el sh indica que la instruccion es en lenguaje terminal)
 
-...sh
+´´´sh
 cd Proyecto1 
 python3 main.py
-...
+´´´
