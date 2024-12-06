@@ -1,0 +1,14 @@
+#declara como se inicia y desde donde se inicia el contenedor
+
+services:
+   app-csv:
+     build:
+       context: .
+       dockerfile: Dockerfile
+      volumes:
+       - .:/app 
+       # volumes permite que los cambios se guarden y se cambien constantemente, esto para no tener que errar y volver a abrir el docker
+
+
+ 
+ #Toca prender el contenedor para poderlo conectar

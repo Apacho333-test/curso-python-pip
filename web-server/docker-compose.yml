@@ -1,0 +1,15 @@
+#declara como se inicia y desde donde se inicia el contenedor
+
+services:
+  web-server:
+    build:
+     context: .
+     dockerfile: Dockerfile
+    volumes:
+     - .:/web-server
+       # volumes permite que los cambios se guarden y se cambien constantemente, esto para no tener que errar y volver a abrir el docker
+    ports:
+     - "80:80"
+
+ 
+ #Toca prender el contenedor para poderlo conectar
